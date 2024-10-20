@@ -1,0 +1,460 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    background-color: #0a0a0a;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+
+}
+
+/* Navbar Navigation Styles */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #4caf50 !important;
+    transform: scale(1.1);
+}
+
+/* Section and Button Styles */
+.about-section {
+    background: linear-gradient(to bottom, #0a0a0a, #1c1c1c);
+    color: white;
+    padding: 100px 0;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.highlight-text {
+    color: #3498db;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.highlight-text.fade-out {
+    opacity: 0;
+}
+
+.highlight-text.fade-in {
+    opacity: 1;
+}
+
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Button Group Styling */
+.btn-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3d8abc;
+    max-width: 100px;
+
+    transition: color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0c89dc;
+
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+}
+
+.btn-secondary:hover {
+    background-color: #27ae60;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 10px; */
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3498db;
+}
+
+/* Image Section Styling */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* my adbout */
+.my_about {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
+    color: white;
+}
+
+.my_about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.my_about .about_title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Adjusted font size for the description */
+.my_about .about_description {
+    font-size: 1.125rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* General Styles for Skills Section */
+#skills {
+    background: linear-gradient(to bottom, #0a0a0a, #1c1c1c);
+    padding: 150px 0;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Card Styles */
+.card {
+    /* border: none; */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(57, 57, 57, 0.1);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #171515;
+}
+
+.card-body {
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* project */
+
+/* project */
+#projects {
+    background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
+    padding: 100px 0;
+}
+
+.project-card {
+    background: #151517;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: 500px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 10px;
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+    background: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-icon:hover {
+    opacity: 0.8;
+}
+
+.github-icon {
+    right: 50px;
+}
+
+.live-demo-icon {
+    right: 10px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.tag-html {
+    background: #1e242633;
+    color: #61dafb;
+}
+
+.tag-css {
+    background: #4a4d4a22;
+    color: #47A248;
+}
+
+.tag-js {
+    background: #38bdf822;
+    color: #38bdf8;
+}
+
+
+
+/* contact */
+#contact {
+    background: linear-gradient(to bottom, #0a0a0a, #1c1c1c);
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+#contact .form-group label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#contact .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+#contact .btn:hover {
+    background-color: #0056b3;
+}
+
+#contact .social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+#contact .social-icons a:hover {
+    color: #007bff;
+}
+
+/* footer */
+#footer {
+    background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+#footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer p,
+#footer ul {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #ffb100;
+}
+
+#footer .social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#footer .social-icons a:hover {
+    color: #ffb100;
+}
+
+.footer-bottom {
+
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* after affect */
+.heading {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .heading::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .heading:hover::after {
+    width: 100%;
+  }
+
+  /* map */
+  #map {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark layer */
+    pointer-events: none; /* So it doesn't interfere with map interaction */
+}
+
+
+
+
+#cv {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    max-width: 150px;
+}
+
