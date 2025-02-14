@@ -1,3 +1,4 @@
+// smooth scroll for navigation links 
 document.addEventListener('DOMContentLoaded', function () {
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
+// Role Animation (Fade-in and Fade-out) 
 document.addEventListener('DOMContentLoaded', () => {
     const roleElement = document.getElementById('role');
     const roles = ['Software Developer', 'Full Stack Developer'];
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(changeRole, 3000);
 });
 
-
+// Project Filtering and Skills Filtering
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', function () {
@@ -69,3 +70,57 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Contact Form Animations and Validation
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('#contact form');
+    const inputs = form.querySelectorAll('input, textarea');
+    
+    // Add floating label effect
+    inputs.forEach(input => {
+        const placeholder = input.placeholder;
+        input.placeholder = '';
+        
+        const label = document.createElement('label');
+        label.textContent = placeholder;
+        input.parentNode.insertBefore(label, input.nextSibling);
+        
+        input.addEventListener('focus', () => {
+            label.classList.add('active');
+        });
+        
+        input.addEventListener('blur', () => {
+            if (!input.value) {
+                label.classList.remove('active');
+            }
+        });
+    });
+    
+    // Form submission handling
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        
+        // Show loading state
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (replace with actual form submission)
+        setTimeout(() => {
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+            submitBtn.classList.add('submit-success');
+            
+            // Reset form
+            setTimeout(() => {
+                form.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('submit-success');
+            }, 3000);
+        }, 1500);
+    });
+});
+
+
