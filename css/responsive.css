@@ -184,3 +184,44 @@
     }
 }
 
+
+
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding-top: 2rem;
+    }
+    
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .footer-heading::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+    
+    .footer-links a {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section {
+      padding: 0.5rem;
+    }
+    
+    .social-link {
+      width: 35px;
+      height: 35px;
+    }
+  }
